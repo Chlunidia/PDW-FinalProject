@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles for the member cards container */
+.members-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Add styles for the card */
+.member-card {
+  width: 200px;
+  height: 30vh; /* Sets the height of the card to 30% of the viewport height */
+  background-color: #f1f1f1; /* Sets the background color to light gray */
+  border-radius: 10px; /* Adds rounded corners with a 10px radius */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow for a 3D effect */
+  padding: 16px; /* Adds padding inside the card */
+  text-align: center; /* Centers the content within the card */
+  margin: 10px; /* Adds margin around the card for spacing */
+  transition: transform 0.5s; /* Apply a smooth transition effect on transform */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add styles for the member image */
+.member-image {
+  width: 120px; /* Sets the width of the member image */
+  height: 160px; /* Sets the height of the member image */
+  border-radius: 50%; /* Creates a circular shape for the image */
+  margin-bottom: 10px; /* Adds spacing between the image and other elements */
+}
+
+/* Apply 3D hover effect on member cards */
+.member-card:hover {
+  transform: rotateY(10deg) scale(1.05); /* Applies a 3D-like hover effect */
+}
+
+/* Styles for heading level 2 (h2) */
+h2 {
+  font-size: 18px; /* Sets the font size to 18 pixels */
+  margin-bottom: 5px; /* Adds spacing between the heading and other elements */
+}
+
+/* Styles for paragraphs (p) */
+p {
+  font-size: 14px; /* Sets the font size to 14 pixels */
+  margin-bottom: 5px; /* Adds spacing between paragraphs */
 }
